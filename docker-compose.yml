@@ -1,0 +1,7 @@
+version: "3"
+services:
+  test:
+    build: .
+    volumes:
+      - ./test2:/app/src/test2
+    command: sleep 500
