@@ -4,4 +4,4 @@ services:
     build: .
     volumes:
       - ./test2:/app/src/test2
-    command: sleep 500
+    command: tail -f /dev/null
