@@ -6,9 +6,9 @@ node {
       )
    }
    
-  stage('workspace') {
-  dir(${env.WORKSPACE})
-}
+#  stage('workspace') {
+#  dir(${env.WORKSPACE})
+#}
    stage('Test') {
      sh 'pwd'
      sh 'cd /Users/ja4544/projects/jenkins && source ./venv/bin/activate && tox'
