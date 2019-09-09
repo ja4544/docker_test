@@ -5,9 +5,12 @@ node {
         url: 'https://github.com/ja4544/docker_test.git'
       )
    }
-   dir(${env.WORKSPACE}) {
+   
+  stage('workspace') {
+  dir(${env.WORKSPACE}) {
      sh 'pwd'
    }
+}
    stage('Test') {
      sh 'pwd'
      sh 'cd /Users/ja4544/projects/jenkins && source ./venv/bin/activate && tox'
