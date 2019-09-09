@@ -7,9 +7,7 @@ node {
    }
    
   stage('workspace') {
-  dir(${env.WORKSPACE}) {
-     sh 'pwd'
-   }
+  dir(${env.WORKSPACE})
 }
    stage('Test') {
      sh 'pwd'
