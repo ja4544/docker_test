@@ -1,10 +1,10 @@
 node {
-   stage('Preparation') {
-      git (
-        poll: true,
-        url: 'https://github.com/ja4544/docker_test.git'
-      )
-   }
+#   stage('Preparation') {
+#      git (
+#        poll: true,
+#        url: 'https://github.com/ja4544/docker_test.git'
+#      )
+#   }
    stage('Test') {
      sh 'cd /Users/ja4544/projects/jenkins && source ./venv/bin/activate && tox'
    }
