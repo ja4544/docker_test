@@ -6,6 +6,7 @@ node {
       )
    }
    stage('Test') {
+     echo ${WORKSPACE}
      sh 'pwd'
      sh 'cd /Users/ja4544/projects/jenkins && source ./venv/bin/activate && tox'
    }
