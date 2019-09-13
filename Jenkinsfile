@@ -8,7 +8,7 @@ node {
    stage('Test') {
      echo "${WORKSPACE}"
      scriptFile = getClass().protectionDomain.codeSource.location.path
-     echo scriptFile
+     //echo scriptFile
      sh 'cd /Users/ja4544/projects/jenkins && source ./venv/bin/activate && tox'
    }
    stage('Build') {
